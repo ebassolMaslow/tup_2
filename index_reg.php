@@ -1,0 +1,81 @@
+<?php
+
+session_start();
+
+include "./php_connect/connect.php";
+
+if (isset($_SESSION['id_user'])) {
+    $IDuser = $_SESSION['id_user'];
+    if ($IDuser === '') {
+        unset($IDuser);
+    }
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/main.css">
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    <title>Регистрация | Технологический университет программирования</title>
+    <meta name="description" content="Зарегистрируйтесь, чтобы получить доступ к авторизации.">
+    <meta name="keywords" content="регистрация, личный кабинет, учетная запись, студент, первый курс">
+    <link rel="shortcut icon" href="./images/svg/shortcut_icon.svg" type="image/svg">
+</head>
+
+<body>
+
+    <!-- форма регистрации -->
+    <h1 class="index_reg__title">Регистрация</h1>
+    <div class="block_reg" id="reg">
+        <div class="wrapper-container">
+            <div class="form-content">
+                <form class="auth_form" action="./php_handler/reg.php" method="post">
+                    <div class="error_message">
+                        <?php
+                        session_start();
+                        if (isset($_SESSION['message'])) {
+                            echo "<p class=\"error_message_text\">{$_SESSION['message']}</p>";
+                            unset($_SESSION['message']);
+                        }
+                        ?>
+                    </div>
+                    <div class="email-and-password">
+                        <label class="label_input_auth">Логин</label>
+                        <div class="div_input">
+                            <input type="text" class="input_form" name="login" placeholder="Введите логин" autocomplete="off" required="required" minlength="4" maxlength="20">
+                        </div>
+                        <label class="label_input_auth">Почта</label>
+                        <div class="div_input">
+                            <input type="email" class="input_form" name="email" placeholder="ivanov@mail.ru" autocomplete="off" required="required" minlength="4" maxlength="50">
+                        </div>
+                        <label class="label_input_auth">Введите пароль</label>
+                        <div class="div_input">
+                            <input type="password" class="input_form" name="password" placeholder="Придумайте пароль" autocomplete="off" required="required" minlength="8" maxlength="30">
+                        </div>
+                        <label class="label_input_auth">Подтвердите пароль</label>
+                        <div class="div_input">
+                            <input type="password" class="input_form" name="confirmpassword" placeholder="Подтвердите пароль" autocomplete="off" required="required" minlength="8" maxlength="30">
+                        </div>
+                    </div>
+                    <div class="h-captcha" data-sitekey="748dbcf4-3ab4-4538-9aa5-9fabae2502d1"></div>
+                    <input type="submit" name="submit" class="submit" value="Зарегистрироваться">
+                    <div class="reset-password">
+                        <a href="./index_auth.php" class="reset-pass-text">уже зарегистрированы? войти</a>
+                        <a href="./" class="reset-pass-text back_to_main">
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 3.55838V0.999379C7.99968 0.801756 7.94087 0.60865 7.83098 0.444396C7.72109 0.280141 7.56504 0.152089 7.3825 0.0763769C7.19996 0.000664301 6.99909 -0.0193211 6.8052 0.0189399C6.61132 0.057201 6.4331 0.151996 6.293 0.291378L0 6.49938L6.293 12.7064C6.38565 12.7996 6.49581 12.8735 6.61715 12.924C6.73848 12.9744 6.86859 13.0004 7 13.0004C7.13141 13.0004 7.26152 12.9744 7.38285 12.924C7.50419 12.8735 7.61435 12.7996 7.707 12.7064C7.79991 12.6136 7.87361 12.5034 7.92389 12.382C7.97416 12.2607 8.00003 12.1307 8 11.9994V9.51038C10.75 9.57838 13.755 10.0764 16 13.4994V12.4994C16 7.86638 12.5 4.05638 8 3.55838Z" fill="black" />
+                            </svg>вернуться на главную</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

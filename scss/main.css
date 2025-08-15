@@ -1,0 +1,3317 @@
+@charset "UTF-8";
+/* montserrat-regular - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v26-cyrillic_latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-500 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v26-cyrillic_latin-500.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-600 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/montserrat-v26-cyrillic_latin-600.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-700 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v26-cyrillic_latin-700.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1157px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/** Главная начало **/
+/*тзапка начало*/
+.container_header {
+  max-width: 1331px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  box-shadow: 0px 2px 20px 1px rgba(0, 0, 0, 0.25);
+}
+
+.main-menu {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  padding: 14px 0;
+}
+.main-menu_item {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #434242;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: 0.5s ease;
+}
+.main-menu_active {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #5C45EA;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: 0.5s ease;
+}
+.main-menu_item:hover {
+  color: #5C45EA;
+  transition: 0.5s ease;
+}
+
+.main-menu li:nth-child(2) {
+  margin-right: 78px;
+}
+
+.main-menu li:nth-child(3) {
+  margin-right: 78px;
+}
+
+.main-menu li:nth-child(4) {
+  margin-right: 78px;
+}
+
+.main-menu li:nth-child(5) {
+  margin-right: 74px;
+}
+
+.logo {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-right: 182px;
+}
+
+.logo_active {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  color: #5C45EA;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-right: 182px;
+}
+
+.logo img {
+  width: 50%;
+  max-width: 52px;
+  min-width: 36px;
+  margin: 0 19px 0 0;
+}
+
+.off-screen-menu {
+  background-color: #5C45EA;
+  height: 100%;
+  width: 100%;
+  max-width: 345px;
+  position: fixed;
+  right: -345px;
+  text-align: center;
+  font-size: 3rem;
+  transition: 0.3s ease;
+  top: 0;
+}
+
+.div_ham_menu {
+  direction: block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 80px 0 0 40px;
+}
+
+.div_ham_menu a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 23px;
+  transition: 0.3s ease-in-out;
+}
+
+.div_ham_menu a:hover {
+  color: #434242;
+  transition: 0.3s ease-in-out;
+}
+
+.main-menu_item_exit {
+  margin-right: 78px;
+}
+
+.div_ham_menu a:nth-child(1) {
+  margin-right: 50px;
+}
+
+.div_ham_menu a:nth-child(2) {
+  margin-right: 50px;
+}
+
+.ham_menu_item {
+  text-decoration: none;
+}
+
+.off-screen-menu.active {
+  right: 0;
+}
+
+.off-screen-menu ul li {
+  list-style-type: none;
+}
+
+.ham-menu {
+  height: 35px;
+  width: 32px;
+  margin-left: auto;
+  position: relative;
+  cursor: pointer;
+}
+
+.ham-menu span {
+  height: 3px;
+  width: 100%;
+  background-color: #000;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease-in-out;
+}
+
+.ham-menu.active span {
+  background-color: white;
+  transition: 0.3 ease-in-out;
+}
+
+.ham-menu span:hover {
+  cursor: pointer;
+}
+
+.ham-menu span:nth-child(1) {
+  top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+  top: 75%;
+}
+
+.ham-menu.active span:nth-child(1) {
+  top: 55%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.ham-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3) {
+  top: 55%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/*шапка конец*/
+.hero_title {
+  text-transform: uppercase;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 64px 0 64px 249px;
+}
+
+/*hero блок начало*/
+.hero_div {
+  display: flex;
+}
+
+.sidebar {
+  width: 225px;
+  height: 202px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 4px rgba(140, 128, 128, 0.25);
+  background: #fff;
+  position: fixed;
+  left: 18%;
+}
+
+.sidebar ul > li > a {
+  text-decoration: none;
+  color: #405E95;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  transition: 0.3s ease-in-out;
+}
+
+.sidebar ul > li > a:hover {
+  color: #5C45EA;
+  transition: 0.3s ease-in-out;
+}
+
+.sidebar ul > li {
+  list-style-type: none;
+  width: 170px;
+  margin: 26px 0 0 0;
+}
+
+.sidebar ul {
+  margin: 20px 0 0 27px;
+}
+
+.hero_img {
+  margin: 0 0 0 240px;
+  width: 849px;
+  height: 477px;
+}
+
+.sidebar_icon {
+  display: none;
+}
+
+/*hero блок конец*/
+/*расписание начало*/
+.timetable {
+  margin: 40px 0 85px 490px;
+}
+
+.div_timetable h2 {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0 0 51px 0;
+}
+
+.div_timetable_text {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  width: 850px;
+  margin: 0 0 57px 0;
+}
+
+.timetable_table {
+  width: 864px;
+  height: 418px;
+  border-radius: 4px;
+  background: #EBEBEB;
+}
+
+.event_column_regular {
+  color: #000;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.event_column_bold {
+  color: #000;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.timetable_table_hr {
+  border: 1.5px solid #000000;
+  width: 716px;
+  border-radius: 20px;
+}
+
+.event {
+  display: flex;
+}
+
+.event:nth-child(1) {
+  margin: 0 0 29px 0;
+}
+
+.timetable_table_hr {
+  margin: 29px 0 29px 0;
+}
+
+.event_column {
+  margin: 0 0 0 30px;
+}
+
+.events {
+  padding: 30px 0 0 23px;
+}
+
+.ecr_width {
+  width: 322px;
+}
+
+.ecr_width_width {
+  width: 165px;
+}
+
+.display_none_text {
+  display: none;
+}
+
+/*расписание конец*/
+/*ответы на вопросы начало*/
+.ATQ_block {
+  width: 755px;
+  height: auto;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  margin: 0 0 23px 0;
+  padding: 31px 63px 36px 46px;
+}
+
+.ATQ_block p:nth-child(1) {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.ATQ_block p {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 10px 0 0 0;
+}
+
+.div_answers_to_questions {
+  margin: 0 0 0 250px;
+}
+
+.div_answers_to_questions h2 {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 52px 0;
+}
+
+/*ответы на вопросы конец*/
+/*контакты начало*/
+.contacts {
+  margin: 54px 0 105px 500px;
+}
+
+.div_contacts {
+  width: 838px;
+  height: 310px;
+  border-radius: 4px;
+  background: #EBEBEB;
+  padding: 33px 0 0 26px;
+}
+
+.div_contacts_title {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 0 0 17px 0;
+}
+
+.div_contacts_subtext {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.div_contacts_subtext span {
+  font-weight: 600;
+}
+
+.div_contacts_subtext:nth-child(3) {
+  margin: 0 0 17px 0;
+}
+
+.div_contacts_subtext:nth-child(4) {
+  margin: 0 0 22px 0;
+}
+
+.div_contacts_subtext:nth-child(6) {
+  margin: 0 0 22px 0;
+}
+
+/*контакты конец*/
+/*подвал начало*/
+.container_footer {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer {
+  background: #5C45EA;
+}
+
+.socials {
+  width: 314px;
+  display: flex;
+  justify-content: space-between;
+  margin: 39px 0 0 83px;
+}
+
+.social_img {
+  width: 70px;
+  height: 70px;
+}
+
+.div_footer {
+  display: flex;
+  padding: 45px 0 56px 0;
+}
+
+.footer_left {
+  margin: 0 157px 0 0;
+}
+
+.footer_left h4 {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 30px;
+  width: 301px;
+  margin: 0 0 23px 0;
+}
+
+.footer_left button {
+  border-radius: 15px;
+  background: #FFF;
+  width: 244px;
+  height: 47px;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  cursor: pointer;
+  border: none;
+  margin: 0 0 59px 0;
+  transition: 0.3s ease-in-out;
+}
+
+.footer_left button a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer_left button:hover {
+  background: #f2f2f2;
+  transition: 0.3s ease-in-out;
+}
+
+.footer_left p {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  width: 480px;
+}
+
+.footer_right p {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.footer_right span {
+  font-weight: 600;
+}
+
+/*подвал конец*/
+/** Главная конец **/
+/** Студентам начало **/
+/*Расписание занятий/сессии начало*/
+.classroom_overlay {
+  display: block;
+  margin: auto;
+  background-image: url("../images/classroom.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 363px;
+  background-position: center;
+}
+
+.Schedule_of_classes {
+  margin: 51px 0 0 0;
+}
+
+.container_students {
+  max-width: 1108px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.SOC_title {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 43px 21px;
+}
+
+.SOC_cards {
+  display: flex;
+}
+
+.SOC_cards_left {
+  padding: 26px 0 0 26px;
+  width: 391px;
+  height: 209px;
+  border-radius: 4px;
+  background: #FFF;
+  box-shadow: 15px 0px 20px 4px rgba(92, 69, 234, 0.25);
+  margin: 0 49px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.SOC_cards_left_item:nth-child(1) {
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+.SOC_cards_left_item {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0 0 5px 0;
+  text-decoration: none;
+}
+.SOC_cards_left_item:nth-child(2):hover, .SOC_cards_left_item:nth-child(3):hover, .SOC_cards_left_item:nth-child(4):hover, .SOC_cards_left_item:nth-child(5):hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.SOC_cards_right {
+  padding: 26px 0 0 26px;
+  width: 391px;
+  height: 209px;
+  border-radius: 4px;
+  background: #FFF;
+  box-shadow: 15px 0px 20px 4px rgba(92, 69, 234, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.SOC_cards_right_item:nth-child(1) {
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+.SOC_cards_right_item {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-decoration: none;
+  margin: 0 0 5px 0;
+}
+.SOC_cards_right_item:nth-child(4) {
+  width: 250px;
+}
+.SOC_cards_right_item:nth-child(2):hover, .SOC_cards_right_item:nth-child(3):hover, .SOC_cards_right_item:nth-child(4):hover, .SOC_cards_right_item:nth-child(5):hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.SOC_buttons_div_item_link {
+  text-decoration: none;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  padding: 0 33px 0 34px;
+  margin: 0 49px 39px 0;
+  min-width: 350px;
+  height: 93px;
+  border-radius: 4px;
+  background: #EBEBEB;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SOC_buttons_div_item_link:hover {
+  background: #DDDDDD;
+  text-decoration: underline;
+  transition: 0.3s ease-in-out;
+}
+
+.SOC_buttons {
+  display: flex;
+}
+
+.SOCB_top {
+  margin: 51px 0 0 0;
+}
+
+.SOCBDI_escpeccialy {
+  padding: 15px 0 17px 20px;
+}
+
+/*Расписание занятий/сессии конец*/
+/*СТУДЕНТЫ ответы на вопрсоы начало*/
+.div_answers_to_questions_students {
+  margin: 0 0 0 0;
+}
+
+/*СТУДЕНТЫ ответы на вопрсоы конец*/
+/*мероприятия и новости начало*/
+.events_and_news {
+  margin: 122px 0 97px 0;
+}
+
+.EAT_hidden {
+  display: none;
+}
+
+.progress-bar {
+  width: 858px;
+  height: 3px;
+  background-color: #eee;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0 0 27px 0;
+}
+
+.progress {
+  height: 100%;
+  background-color: #5C45EA;
+  border-radius: 4px;
+  width: 20%;
+  transition: 0.3s all ease-in-out;
+}
+
+.progress_news {
+  height: 100%;
+  background-color: #5C45EA;
+  border-radius: 4px;
+  width: 15%;
+  margin-left: 24%;
+  transition: 0.3s all ease-in-out;
+}
+
+.events_and_news_text {
+  display: flex;
+  width: 323px;
+  justify-content: space-between;
+  margin: 0 0 5px 0;
+}
+
+.EAN_text_events {
+  color: #5C45EA;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.EAN_text_news {
+  color: #000000;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.div_events_block,
+.div_news_block {
+  display: flex;
+  /* Изменение на display: flex */
+  width: 720px;
+  justify-content: space-between;
+}
+
+.div_news_block.EAT_hidden {
+  display: none;
+  /* Оставить как есть */
+}
+
+.events_block {
+  width: 323px;
+}
+
+.events_block_text:nth-child(1) {
+  color: #405E95;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 0 19px 0;
+}
+
+.events_block_text:nth-child(2) {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+/*мероприятия и новости конец*/
+/** Студентам конец **/
+/** Профиль начало **/
+.profile__title {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 28px;
+  color: #000;
+  margin: 33px 0 31px 0;
+  text-align: center;
+}
+.profile__section {
+  margin: 0 0 89px 0;
+}
+.profile__container {
+  max-width: 1187px;
+  width: 100%;
+  margin: 0 auto;
+}
+.profile__div_data {
+  display: flex;
+}
+.profile__photo {
+  border-radius: 4px;
+  width: 301px;
+  height: 362px;
+  box-shadow: 0 0 10px 4px rgba(140, 128, 128, 0.25);
+  background: #fff;
+  margin: 0 30px 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.profile__photo::after {
+  content: "Обновить фотографию";
+  position: absolute;
+  bottom: -33px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px 4px rgba(140, 128, 128, 0.25);
+  background: #fff;
+  color: #000;
+  padding: 14px 1px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  width: 245px;
+}
+.profile__photo:hover::after {
+  opacity: 1;
+  /* изменяем прозрачность при наведении на изображение профиля */
+}
+.profile__img_photo_profile {
+  width: 245px;
+  height: 317px;
+  border-radius: 10px;
+}
+.profile__edit {
+  border-radius: 4px;
+  width: 301px;
+  height: 115px;
+  box-shadow: 0 0 10px 4px rgba(140, 128, 128, 0.25);
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.profile__edit_title_text {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: #000;
+}
+.profile__edit_btn {
+  padding: 14px 49px;
+  color: #FFF;
+  font-size: 14px;
+  border-radius: 10px;
+  background: #5C45EA;
+  margin: 15px 0 10px 0;
+  max-width: 235px;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+  border: none;
+  font-family: Montserrat;
+}
+.profile__edit_btn:hover {
+  background: #405E95;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.profile__edit_btn_link {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+.profile__student_data {
+  display: flex;
+  flex-wrap: wrap;
+}
+.profile__university_data {
+  border-radius: 4px;
+  width: 346px;
+  height: 250px;
+  box-shadow: 0 0 10px 4px rgba(140, 128, 128, 0.25);
+  background: #fff;
+  margin: 0 30px 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile__university_data ul:nth-child(1) {
+  margin: 0 30px 0 0;
+}
+.profile__university_data_text_left {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 18px;
+  color: #000;
+  margin: 0 0 12px 0;
+}
+.profile__university_data_text_right {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  margin: 0 0 12px 0;
+  width: 106px;
+  overflow: hidden;
+}
+.profile__university_data_text_right:hover {
+  overflow: auto;
+  width: 106px;
+}
+@media (max-width: 240px) {
+  .profile__student_data_div_text_right:hover {
+    overflow: scroll;
+    /* Hide overflow when width is less than 240px */
+  }
+}
+.profile__student_data_div {
+  border-radius: 4px;
+  width: 450px;
+  max-height: 248px;
+  box-shadow: 0 0 10px 4px rgba(140, 128, 128, 0.25);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 30px;
+}
+.profile__student_data_div ul:nth-child(1) {
+  margin: 0 81px 0 0;
+}
+.profile__student_data_div_text_right {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  margin: 0 0 12px 0;
+  width: 240px;
+  overflow: hidden;
+}
+.profile__student_data_div_text_right:hover {
+  overflow: auto;
+  width: 240px;
+}
+@media (max-width: 240px) {
+  .profile__student_data_div_text_right:hover {
+    overflow: scroll;
+    /* Hide overflow when width is less than 240px */
+  }
+}
+.profile__password_div {
+  border-radius: 4px;
+  width: 346px;
+  height: 226px;
+  box-shadow: 0 0 10px 4px rgba(140, 128, 128, 0.25);
+  background: #fff;
+  margin: 0 30px 0 0;
+}
+.profile__password_div ul {
+  display: flex;
+  width: 222px;
+  justify-content: space-between;
+  margin: 30px 0 16px 30px;
+}
+.profile__forgot_password {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.profile__forgot_password_text {
+  margin: 0 0 13px 0;
+}
+.profile__status_question_div {
+  border-radius: 4px;
+  width: 480px;
+  height: 226px;
+  box-shadow: 0 0 10px 4px rgba(140, 128, 128, 0.25);
+  background: #fff;
+}
+.profile__status_question_div ul {
+  display: flex;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 0 0 40px;
+}
+.profile__status_question_div ul li:nth-child(1) {
+  margin: 0 132px 0 0;
+}
+.profile__status_question_text {
+  margin: 21px 0 0 29px;
+}
+.profile__ul_answers {
+  display: flex;
+  margin: 0 0 15px 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: auto;
+  max-height: 60px;
+  overflow: scroll;
+  padding: 60px 0 0 0;
+}
+.profile__question_anser_body {
+  display: flex;
+}
+.profile__university_data_text {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  text-align: center;
+  margin: 20px 0 0 0;
+  cursor: pointer;
+}
+.profile__university_data_text_with_answer {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 18px;
+  color: #5C45EA;
+  text-align: center;
+  margin: 20px 0 0 0;
+  cursor: pointer;
+}
+.profile__university_data_text_with_answer:hover {
+  text-decoration: underline;
+}
+.profile__ul_answers p:nth-child(1) {
+  margin: 20px 100px 0 0;
+}
+
+/* Стили для модального окна */
+.modal_update_photo {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* задаем полупрозрачный черный фон */
+}
+
+.modal_crop_photo {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* задаем полупрозрачный черный фон */
+}
+
+.cropper-container {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* располагаем модальное окно по центру вертикально и горизонтально */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 10px;
+  max-width: 557px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* располагаем модальное окно по центру вертикально и горизонтально */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 10px;
+  max-width: 557px;
+}
+
+.modal-content-photo {
+  background-color: #fefefe;
+  margin: 9% auto;
+  /* располагаем модальное окно по центру вертикально и горизонтально */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 10px;
+  max-width: 557px;
+}
+
+.modal_update_photo__title {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #000;
+  margin: 20px 0 31px 0;
+}
+.modal_update_photo__margin {
+  margin: 0 auto;
+}
+.modal_update_photo__subtitle {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #000;
+  width: 400px;
+  margin-top: 17px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.margin_top_q {
+  margin-top: 90px;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close_second {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close_second:hover,
+.close_second:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cropped_img_profile {
+  width: 245px;
+  height: 317px;
+  border-radius: 10px;
+  border: 2px solid black;
+  margin: 0 auto;
+}
+
+.div_upload_new {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-file-upload {
+  padding: 15px 70px;
+  color: #FFF;
+  font-size: 14px;
+  border-radius: 10px;
+  background: #5C45EA;
+  margin: 18px auto 14px auto;
+  max-width: 237px;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+  border: none;
+  font-family: Montserrat;
+}
+
+.custom-file-upload:hover {
+  background: #405E95;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.submit_upload {
+  padding: 15px 72px;
+  color: #FFF;
+  font-size: 14px;
+  border-radius: 10px;
+  background: #5C45EA;
+  margin: 0 auto;
+  max-width: 267px;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+  border: none;
+  font-family: Montserrat;
+}
+
+.submit_upload:hover {
+  background: #405E95;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/** Профиль конец **/
+/*помощь и поддержка начало*/
+.container_help {
+  max-width: 1106px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.help_title {
+  text-transform: uppercase;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 64px 0 82px 0;
+}
+
+.div_contacts_help {
+  min-width: 614px;
+  height: 310px;
+  border-radius: 4px;
+  box-shadow: 0 6px 10px 4px rgba(140, 128, 128, 0.25);
+  background: #fff;
+  padding: 33px 0 0 26px;
+  margin: 30px 0 0 0;
+}
+
+.div_contacts_help_section {
+  margin: 12px 0 117px 0;
+  display: flex;
+  width: 1106px;
+  justify-content: space-between;
+}
+
+.div_contacts_right {
+  justify-content: flex-end;
+}
+.div_contacts_right_title {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 24px;
+  color: #000;
+  width: 423px;
+  margin: 0 0 55px 0;
+}
+
+.div_answers_to_questions_help h2 {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 52px 0;
+}
+
+.answers_to_questions_help {
+  margin: 0 0 96px 0;
+}
+
+textarea {
+  border: 2px solid #EBEBEB;
+  resize: none;
+  width: 360px;
+  height: 135px;
+  border-radius: 10px;
+  background: #EBEBEB;
+  color: #5C545F;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 15px 0 15px;
+}
+
+textarea:focus {
+  border: 2px solid #5C45EA;
+  outline: none;
+  background: #ffffff;
+  transition: 0.3s all ease-in-out;
+}
+
+textarea:hover {
+  border: 2px solid #5C45EA;
+  transition: 0.3s all ease-in-out;
+}
+
+textarea::-moz-placeholder {
+  color: #5C545F;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+textarea::placeholder {
+  color: #5C545F;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+/*помощь и поддержка конец*/
+/*Документы начало*/
+.documents__title {
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 28px;
+  color: #000;
+  margin: 49px 0 45px 0;
+}
+.documents__pdf_btn {
+  font-family: Montserrat;
+  color: #FFF;
+  padding: 12px 0 12px 30px;
+  width: 394px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 10px;
+  background: #D64634;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  border: none;
+}
+.documents__pdf_btn > svg {
+  margin-right: 30px;
+}
+.documents__pdf_btn_link {
+  text-decoration: none;
+  color: #FFF;
+}
+.documents__pdf_btn:hover {
+  background: #BB2D1A;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.documents__pdf_buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 861px;
+  margin: 0 auto;
+}
+.documents__request {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+  text-align: center;
+  margin: 48px 0 47px 0;
+}
+.documents__request_reference {
+  margin: 0 0 0 733px;
+}
+
+.pdf_btn_margin_first svg {
+  margin-right: 30px;
+}
+
+.pdf_btn_margin_second svg {
+  margin-right: 77px;
+}
+
+.radio_document {
+  background-color: #EBEBEB;
+  padding: 19px 23px 26px 20px;
+  border-radius: 10px;
+  max-width: 351px;
+}
+
+.radio_input_doc {
+  margin: 15px 0;
+}
+
+/* Стилизация радиокнопок */
+input[type=radio] {
+  display: none;
+  /* Скрыть оригинальные радиокнопки */
+}
+
+/* Создание стилизованных радиокнопок */
+input[type=radio] + label {
+  position: relative;
+  padding-left: 30px;
+  /* Отступ для кастомной радиокнопки */
+  cursor: pointer;
+  font-family: Montserrat;
+  font-size: 14px;
+  color: #5C545F;
+}
+
+/* Стилизация кастомной радиокнопки */
+input[type=radio] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #9A9999;
+  /* Цвет рамки неотмеченной радиокнопки */
+  border-radius: 50%;
+  /* Для создания круглой формы */
+  background-color: #EBEBEB;
+}
+
+/* Стилизация отмеченной радиокнопки */
+input[type=radio]:checked + label::before {
+  background-color: #EBEBEB;
+  /* Цвет заливки отмеченной радиокнопки */
+}
+
+/* Создание отметки в центре кастомной радиокнопки */
+input[type=radio] + label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #9A9999;
+  /* Цвет отметки радиокнопки */
+  display: none;
+  /* Скрыть отметку по умолчанию */
+}
+
+/* Отображение отметки при выборе радиокнопки */
+input[type=radio]:checked + label::after {
+  display: block;
+}
+
+label.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  font-family: Montserrat;
+  font-size: 14px;
+  color: #5C545F;
+  margin: 0 0 0 20px;
+}
+
+input.error {
+  border: 2px solid red;
+  /* стилизуем границу поля ввода в случае ошибки */
+}
+
+#documnets_request_form {
+  margin: 0 0 82px 0;
+}
+
+/*Документы конец*/
+/** Авторизация начало **/
+.block_auth {
+  margin: 0 0 0 744px;
+}
+
+.block_reg {
+  margin: 0 0 0 744px;
+}
+
+.input_form {
+  border: 2px solid #EBEBEB;
+  width: 375px;
+  height: 42px;
+  background: #EBEBEB;
+  padding: 0 15px 0 0;
+  color: #5C545F;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: Montserrat;
+  text-indent: 14px;
+  transition: 0.3s all ease-in-out;
+  margin: 4px 0 0 0;
+}
+
+.div_input {
+  margin: 0 0 13px 0;
+}
+
+.input_form:hover {
+  border: 2px solid #5C45EA;
+  transition: 0.3s all ease-in-out;
+}
+
+.input_form:focus {
+  border: 2px solid #5C45EA;
+  outline: none;
+  background: #ffffff;
+  transition: 0.3s all ease-in-out;
+}
+
+.input_form::-moz-placeholder {
+  -moz-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.input_form::placeholder {
+  transition: 0.3s all ease-in-out;
+}
+
+.input_form:focus::-moz-placeholder {
+  color: transparent;
+  -moz-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.input_form:focus::placeholder {
+  color: transparent;
+  transition: 0.3s all ease-in-out;
+}
+
+#showPasswordCheckbox {
+  margin: 27px 0 0 -40px;
+  position: absolute;
+}
+
+.index_auth__title {
+  margin: 300px 0 39px 0;
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 75%;
+  color: #000;
+}
+
+.index_reg__title {
+  margin: 221px 0 39px 0;
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 75%;
+  color: #000;
+}
+
+.reset_password__title {
+  margin: 270px auto 50px auto;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 28px;
+  color: #000;
+  width: 352px;
+}
+
+.form_reset_password {
+  margin: 0 0 0 743px;
+}
+
+.label_input_auth {
+  font-family: Montserrat;
+  font-size: 12px;
+  color: #5C545F;
+  font-weight: 500;
+  margin: 0 0 0 10px;
+}
+
+.submit {
+  padding: 15px 177px;
+  color: #FFF;
+  font-size: 14px;
+  border-radius: 10px;
+  background: #5C45EA;
+  margin: 15px 0 10px 0;
+  max-width: 394px;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+  border: none;
+  font-family: Montserrat;
+}
+
+.submit:hover {
+  background: #405E95;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.error_message_text {
+  background-color: #ffcccc;
+  color: #cc0000;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #cc0000;
+  border-radius: 5px;
+  width: 374px;
+  margin: 0 0 10px;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+}
+
+.error-message {
+  background-color: #ffcccc;
+  color: #cc0000;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #cc0000;
+  border-radius: 5px;
+  width: 374px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+}
+
+.error_message {
+  width: 394px;
+}
+
+.success-message {
+  background-color: #9CFBA5;
+  color: #2FA73A;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #2FA73A;
+  border-radius: 5px;
+  width: 374px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.h-captcha {
+  display: flex;
+  justify-content: center;
+  width: 394px;
+  margin: 0 0 20px 0;
+}
+
+.reset-pass-text {
+  font-size: 12px;
+  color: #5C545F;
+  font-family: Montserrat;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 394px;
+}
+
+.back_to_main {
+  margin: 25px 0 0 0;
+}
+
+.back_to_main > svg {
+  margin-right: 10px;
+}
+
+.reset-pass-text:hover {
+  text-decoration: underline;
+}
+
+.reset_password {
+  color: #5C45EA;
+}
+
+/** Авторизация конец **/
+/** админка начало **/
+.container_header_admin {
+  max-width: 830px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.questionText_block {
+  position: absolute;
+  background-color: #000;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  overflow: hidden;
+  white-space: normal;
+  height: auto;
+  box-shadow: 0 0 10px 5px rgba(140, 128, 128, 0.25);
+  background: #fff;
+  border-radius: 10px;
+  font-family: Montserrat;
+  display: none;
+  left: 40%;
+}
+
+.admin_table_row {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  margin: 40px 0 0 300px;
+}
+
+.admin_text {
+  margin: 40px 0 0 300px;
+}
+
+.container_admin {
+  max-width: 1350px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 1400px;
+}
+
+.profile_admin_top {
+  margin: 100px 0 100px 0;
+}
+
+th,
+td {
+  border: 2px solid #5C45EA;
+  padding: 8px;
+  text-align: center;
+}
+
+td {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+}
+
+th {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  color: #000;
+}
+
+.td_id {
+  max-width: 100px;
+  overflow: scroll;
+}
+
+.td_question {
+  max-width: 300px;
+  overflow: scroll;
+  height: 100px;
+}
+
+.td_email {
+  max-width: 238px;
+  overflow: scroll;
+}
+
+.td_submit {
+  border: none;
+}
+
+.td_padding {
+  padding: 0;
+}
+
+.exit_table {
+  margin-left: 83px;
+}
+
+.submit_table {
+  padding: 15px 20px;
+  color: #FFF;
+  font-size: 14px;
+  border-radius: 10px;
+  background: #5C45EA;
+  margin: 15px 0 10px 37px;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+  border: none;
+  font-family: Montserrat;
+  text-decoration: none;
+}
+
+.submit_table:hover {
+  background: #405E95;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.modal_answer {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-answer {
+  box-shadow: 0 0 10px 5px rgba(140, 128, 128, 0.25);
+  background: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 10px;
+}
+
+#answerContent {
+  font-size: 16px;
+  font-family: Montserrat;
+}
+
+.close_answer {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close_answer:hover,
+.close_answer:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container_answer {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.textarea_answer {
+  width: 1370px;
+  border-radius: 0;
+  border: 2px solid #5C45EA;
+  background: white;
+  height: 219px;
+}
+
+.profile_admin_margin {
+  margin: 200px 0 16px 0;
+}
+
+.submit_answer {
+  padding: 15px 520px;
+  color: #FFF;
+  font-size: 14px;
+  border-radius: 10px;
+  background: #5C45EA;
+  margin: 15px 0 10px 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+  border: none;
+  font-family: Montserrat;
+}
+
+.submit_answer:hover {
+  background: #405E95;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.container_table_header {
+  max-width: 1350px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tables_title {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  color: #000;
+  margin: 58px 0 58px 0;
+}
+
+.role_table__form {
+  display: flex;
+  flex-direction: row;
+  width: 840px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submit_height {
+  max-height: 46px;
+}
+
+.table_top {
+  margin: 18px 0 100px 0;
+}
+
+.modal_update_table__title {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #000;
+  margin: 20px 0 31px 0;
+}
+.modal_update_table__margin {
+  margin: 0 auto;
+}
+.modal_update_table__subtitle {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #000;
+  width: 400px;
+  margin-top: 17px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal_update_table {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* задаем полупрозрачный черный фон */
+}
+
+.add_table_title {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 28px;
+  margin: 20px 0 20px 10px;
+}
+
+.ca_margin {
+  margin: 0 0 80px 0;
+}
+
+.del_btn > a > svg > path {
+  fill: #C31010;
+  transition: 0.3s all ease-in-out;
+}
+
+.del_btn > a > svg > path:hover {
+  fill: #851c1c;
+  transition: 0.3s all ease-in-out;
+}
+
+.edit_btn > svg > path {
+  stroke: #000000;
+  transition: 0.3s all ease-in-out;
+}
+
+.edit_btn > svg > path:hover {
+  stroke: #444444;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+
+#role_table__form_edit {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#user_table__form {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.table_user_scroll {
+  width: 1400px;
+  border: 8px solid #5C45EA;
+  overflow: scroll;
+  display: block;
+}
+
+.select_role {
+  border: 2px solid #EBEBEB;
+  width: 394px;
+  height: 50px;
+  background: #EBEBEB;
+  padding: 0 15px 0 0;
+  color: #5C545F;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: Montserrat;
+  text-indent: 14px;
+  transition: 0.3s all ease-in-out;
+  margin: 4px 0 0 0;
+}
+
+/** админка конец **/
+/** 404 начало **/
+.title404-div {
+  margin: 370px 0 0 0;
+}
+
+.title404 {
+  font-size: 32px;
+  font-family: Montserrat;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.subtitle404 {
+  font-size: 22px;
+  font-family: Montserrat;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  color: #5C545F;
+  display: block;
+  margin: 0 auto;
+  transition: 0.15s all ease-in-out;
+}
+
+.subtitle404:hover {
+  color: #5C45EA;
+  transition: 0.15s all ease-in-out;
+  text-decoration: underline;
+}
+
+/** 404 конец **/
+/** Профиль редактирование начало **/
+.profile_edit__container {
+  max-width: 1149px;
+  width: 100%;
+  margin: 0 auto;
+}
+.profile_edit__title {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 40px;
+  color: #000;
+  text-align: center;
+  margin: 211px 0 53px 0;
+}
+
+.submit_profile_edit {
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile_edit_div {
+  width: 819px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.margin_auto_wo_top {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.margin_auto {
+  margin: 0 auto;
+}
+
+.f {
+  display: none;
+}
+
+/** Профиль редактирование конец **/
+/** Админка начало **/
+.admin_path {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: Montserrat;
+  margin: 0 0 30px 0;
+  color: #2FA73A;
+  font-weight: 500;
+}
+
+.admin_path:hover {
+  text-decoration: underline;
+}
+
+/** Админка  конец **/
+/******************/
+/*                */
+/*                */
+/*     планшет    */
+/*                */
+/*                */
+/******************/
+@media (width: 768px) {
+  .container {
+    max-width: 542px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  /** Главная начало **/
+  /*шапка начало*/
+  .container_header {
+    max-width: 652px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .main-menu li:nth-child(2) {
+    margin-right: 0;
+    display: none;
+  }
+  .main-menu li:nth-child(3) {
+    margin-right: 0;
+    display: none;
+  }
+  .main-menu li:nth-child(4) {
+    margin-right: 0;
+    display: none;
+  }
+  .logo52px {
+    display: none;
+  }
+  .logo48px {
+    display: flex;
+    align-items: center;
+    margin-right: 478px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .logo48px img {
+    margin-right: 19px;
+  }
+  .ham-menu {
+    display: block;
+  }
+  /*шапка конец*/
+  .hero_title {
+    font-size: 20px;
+    margin: 56px 0 33px 17px;
+  }
+  /*hero блок начало*/
+  .sidebar {
+    width: 61px;
+    height: 178px;
+    left: 7%;
+  }
+  .sidebar ul {
+    margin: 18px 0 0 19px;
+  }
+  .sidebar ul li {
+    width: auto;
+  }
+  .sidebar_element_1440px {
+    display: none;
+  }
+  .sidebar_icon {
+    display: block;
+  }
+  .hero_img {
+    width: 420px;
+    height: 235.97px;
+    margin: 0 0 0 17px;
+  }
+  /*hero блок конец*/
+  /*расписание начало*/
+  .timetable {
+    margin: 65px 0 85px 40px;
+  }
+  .div_timetable h2 {
+    font-size: 20px;
+    margin: 0 0 43px 0;
+  }
+  .div_timetable_text {
+    font-size: 14px;
+    line-height: 20px;
+    width: 491px;
+    margin: 0 0 71px 0;
+  }
+  .timetable_table {
+    width: 525px;
+    height: 701px;
+  }
+  .event_column_regular {
+    line-height: 20px;
+    font-size: 14px;
+    margin: 0 30px 0 0;
+  }
+  .event_column_bold {
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .timetable_table_hr {
+    border: 1.5px solid #000000;
+    width: 461px;
+    border-radius: 20px;
+  }
+  .event {
+    display: block;
+  }
+  .event:nth-child(1) {
+    margin: 0 0 29px 0;
+  }
+  .timetable_table_hr {
+    margin: 29px 0 29px 0;
+  }
+  .event_column {
+    margin: 25px 0 25px 0;
+    display: flex;
+  }
+  .events {
+    padding: 5px 0 0 23px;
+  }
+  .ecr_width {
+    width: 300px;
+  }
+  .ecr_width_width {
+    width: auto;
+  }
+  .display_none {
+    display: none;
+  }
+  .dots {
+    display: block;
+  }
+  /*расписание конец*/
+  /*ответы на вопросы начало*/
+  .ATQ_block {
+    width: 417px;
+  }
+  .div_answers_to_questions {
+    margin: 0 0 0 30px;
+  }
+  /*ответы на вопросы конец*/
+  /*контакты начало*/
+  .contacts {
+    margin: 64px 0 105px 60px;
+  }
+  .div_contacts {
+    width: 502px;
+    height: 230px;
+    padding: 23px 0 0 32px;
+  }
+  .div_contacts_title {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 8px 0;
+  }
+  .div_contacts_subtext {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  /*контакты конец*/
+  /*подвал начало*/
+  .container_footer {
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .div_footer {
+    display: block;
+    padding: 45px 0 56px 0;
+  }
+  .footer_left {
+    margin-bottom: 40px;
+  }
+  .socials {
+    margin: 40px 0 0 0;
+  }
+  /*подвал конец*/
+  /** Главная конец **/
+  /** Студентам начало **/
+  /*Расписание занятий/сессии начало*/
+  .container_students {
+    max-width: 436px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .classroom_overlay {
+    height: 193.3px;
+  }
+  .SOC_cards {
+    display: block;
+  }
+  .SOC_cards_left {
+    margin: 0 0 43px 0;
+  }
+  .SOC_buttons {
+    display: block;
+  }
+  .SOCB_top {
+    margin: 135px 0 0 0;
+  }
+  /*Расписание занятий/сессии конец*/
+  /*СТУДЕНТЫ ответы на вопрсоы начало*/
+  .div_answers_to_questions_students {
+    margin: 0 0 0 0;
+  }
+  /*СТУДЕНТЫ ответы на вопрсоы конец*/
+  /*мероприятия и новости начало*/
+  .events_and_news {
+    margin: 40px 0 63px 0;
+  }
+  .progress-bar {
+    width: 521px;
+    height: 3px;
+  }
+  .progress {
+    width: 30%;
+  }
+  .events_and_news_text {
+    display: flex;
+    width: 323px;
+    justify-content: space-between;
+    margin: 0 0 5px 0;
+  }
+  .events_and_news_text p:nth-child(1) {
+    color: #5C45EA;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .events_and_news_text p:nth-child(2) {
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .div_events_block {
+    display: block;
+    width: auto;
+  }
+  .events_block {
+    width: 323px;
+    margin: 0 0 42px 0;
+  }
+  /*мероприятия и новости конец*/
+  /** Студентам конец **/
+  /** Профиль начало **/
+  .profile_body {
+    display: block;
+  }
+  .profile_body_right {
+    margin: 0 0 106px 0;
+  }
+  /** Профиль конец **/
+  /** Авторизация начало **/
+  .block_auth {
+    margin: 288px 0 0 130px;
+  }
+  /** Авторизация конец **/
+}
+/******************/
+/*                */
+/*  перевёрнутый  */
+/*     планшет    */
+/*                */
+/*                */
+/******************/
+@media (width: 1024px) {
+  .container {
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  /** Главная начало **/
+  /*шапка начало*/
+  .container_header {
+    max-width: 908px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .logo52px {
+    display: none;
+  }
+  .logo48px {
+    display: flex;
+    align-items: center;
+    margin-right: 97px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .logo48px img {
+    margin-right: 19px;
+  }
+  .main-menu_item {
+    font-size: 16px;
+  }
+  .main-menu li:nth-child(2) {
+    margin-right: 53px;
+  }
+  .main-menu li:nth-child(3) {
+    margin-right: 53px;
+  }
+  .main-menu li:nth-child(4) {
+    margin-right: 134px;
+  }
+  /*шапка конец*/
+  .hero_title {
+    font-size: 20px;
+    margin: 56px 0 40px 30px;
+  }
+  /*hero блок начало*/
+  .sidebar {
+    width: 61px;
+    height: 178px;
+    left: 14%;
+  }
+  .sidebar ul {
+    margin: 18px 0 0 19px;
+  }
+  .sidebar ul li {
+    width: auto;
+  }
+  .sidebar_element_1440px {
+    display: none;
+  }
+  .sidebar_icon {
+    display: block;
+  }
+  .hero_img {
+    width: 620px;
+    height: 348.34px;
+    margin: 0 0 0 30px;
+  }
+  /*hero блок конец*/
+  /*расписание начало*/
+  .timetable {
+    margin: 65px 0 85px 82px;
+  }
+  .div_timetable h2 {
+    font-size: 24px;
+    margin: 0 0 25px 0;
+  }
+  .div_timetable_text {
+    font-size: 14px;
+    line-height: 20px;
+    width: 491px;
+    margin: 0 0 58px 0;
+  }
+  .timetable_table {
+    width: 525px;
+    height: 701px;
+  }
+  .event_column_regular {
+    line-height: 20px;
+    font-size: 14px;
+    margin: 0 30px 0 0;
+  }
+  .event_column_bold {
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .timetable_table_hr {
+    border: 1.5px solid #000000;
+    width: 461px;
+    border-radius: 20px;
+  }
+  .event {
+    display: block;
+  }
+  .event:nth-child(1) {
+    margin: 0 0 29px 0;
+  }
+  .timetable_table_hr {
+    margin: 29px 0 29px 0;
+  }
+  .event_column {
+    margin: 25px 0 25px 0;
+    display: flex;
+  }
+  .events {
+    padding: 5px 0 0 23px;
+  }
+  .ecr_width {
+    width: 300px;
+  }
+  .ecr_width_width {
+    width: auto;
+  }
+  .display_none {
+    display: none;
+  }
+  .dots {
+    display: block;
+  }
+  /*расписание конец*/
+  /*ответы на вопросы начало*/
+  .ATQ_block {
+    width: 417px;
+  }
+  .div_answers_to_questions {
+    margin: 0 0 0 40px;
+  }
+  /*ответы на вопросы конец*/
+  /*контакты начало*/
+  .contacts {
+    margin: 64px 0 70px 80px;
+  }
+  .div_contacts {
+    width: 502px;
+    height: 230px;
+    padding: 23px 0 0 32px;
+  }
+  .div_contacts_title {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 8px 0;
+  }
+  .div_contacts_subtext {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  /*контакты конец*/
+  /*подвал начало*/
+  .container_footer {
+    max-width: 830px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .footer_left {
+    margin: 0 60px 0 0;
+  }
+  .div_footer {
+    padding: 45px 0 56px 0;
+  }
+  .footer_left {
+    margin-bottom: 40px;
+  }
+  .socials {
+    margin: 40px 0 0 0;
+  }
+  /*подвал конец*/
+  /** Главная конец **/
+  /** Студентам начало **/
+  /*Расписание занятий/сессии начало*/
+  .container_students {
+    max-width: 892px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .classroom_overlay {
+    height: 258.13px;
+  }
+  /*Расписание занятий/сессии конец*/
+  /*СТУДЕНТЫ ответы на вопрсоы начало*/
+  .div_answers_to_questions_students {
+    margin: 0 0 0 0;
+  }
+  /*СТУДЕНТЫ ответы на вопрсоы конец*/
+  /** Студентам конец **/
+  /** Профиль начало **/
+  .profile_body_left {
+    margin: 0 80px 0 0;
+  }
+  textarea {
+    width: 386px;
+  }
+  /** Профиль конец **/
+  /** Авторизация начало **/
+  .block_auth {
+    margin: 180px 0 0 230px;
+  }
+  /** Авторизация конец **/
+}
+/******************/
+/*                */
+/*                */
+/*     телефон    */
+/*                */
+/*                */
+/******************/
+@media (width: 480px) {
+  .container {
+    max-width: 430px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  /** Главная начало **/
+  /*шапка начало*/
+  .container_header {
+    max-width: 414px;
+  }
+  .main-menu li:nth-child(2) {
+    margin-right: 0;
+    display: none;
+  }
+  .main-menu li:nth-child(3) {
+    margin-right: 0;
+    display: none;
+  }
+  .main-menu li:nth-child(4) {
+    margin-right: 0;
+    display: none;
+  }
+  .logo52px {
+    display: none;
+  }
+  .logo36px {
+    display: flex;
+    align-items: center;
+    margin-right: 243px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .logo36px img {
+    margin-right: 19px;
+  }
+  .ham-menu {
+    display: block;
+  }
+  .off-screen-menu {
+    background-color: rgb(255, 255, 255);
+    height: 92px;
+    max-width: 480px;
+    top: 64px;
+    right: -480px;
+  }
+  .hr_osm {
+    width: 348px;
+    top: 70px;
+  }
+  .div_ham_menu a {
+    font-size: 13px;
+  }
+  .div_ham_menu a:nth-child(1) {
+    margin-right: 20px;
+  }
+  .div_ham_menu a:nth-child(2) {
+    margin-right: 20px;
+  }
+  /*шапка конец*/
+  .hero_title {
+    font-size: 20px;
+    margin: 37px 0 15px 140px;
+  }
+  /*hero блок начало*/
+  .sidebar {
+    width: 54px;
+    height: 178px;
+    left: 13%;
+  }
+  .sidebar ul {
+    margin: 14px 0 0 16px;
+  }
+  .sidebar ul li {
+    width: auto;
+  }
+  .sidebar_element_1440px {
+    display: none;
+  }
+  .sidebar_icon {
+    display: block;
+  }
+  .hero_img {
+    width: 330px;
+    height: 195.36px;
+    margin: 0 0 0 100px;
+  }
+  /*hero блок конец*/
+  /*расписание начало*/
+  .timetable {
+    margin: 36px 0 39px 127px;
+  }
+  .div_timetable h2 {
+    font-size: 20px;
+    margin: 0 0 25px 0;
+    width: 325px;
+  }
+  .div_timetable_text {
+    font-size: 12px;
+    line-height: 20px;
+    width: 325px;
+    margin: 0 0 58px 0;
+  }
+  .timetable_table {
+    width: 300px;
+    height: 818px;
+  }
+  .event_column_regular {
+    line-height: 20px;
+    font-size: 14px;
+    margin: 0 30px 0 0;
+  }
+  .event_column_bold {
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .timetable_table_hr {
+    border: 1.5px solid #000000;
+    width: 241px;
+    border-radius: 20px;
+  }
+  .event {
+    display: block;
+  }
+  .event:nth-child(1) {
+    margin: 0 0 29px 0;
+  }
+  .timetable_table_hr {
+    margin: 29px 0 29px 0;
+  }
+  .event_column {
+    margin: 25px 0 25px 0;
+    display: flex;
+  }
+  .events {
+    padding: 5px 0 0 23px;
+  }
+  .ecr_width {
+    width: 300px;
+  }
+  .ecr_width_width {
+    width: auto;
+  }
+  .display_none {
+    display: none;
+  }
+  .dots {
+    display: block;
+  }
+  /*расписание конец*/
+  /*ответы на вопросы начало*/
+  .ATQ_block {
+    width: 225px;
+    padding: 23px 40px 24px 29px;
+  }
+  .ATQ_block p:nth-child(1) {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .ATQ_block p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 10px 0 0 0;
+  }
+  .div_answers_to_questions {
+    margin: 0 0 0 103px;
+  }
+  .div_answers_to_questions h2 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 52px 0;
+  }
+  /*ответы на вопросы конец*/
+  /*контакты начало*/
+  .contacts {
+    margin: 64px 0 49px 125px;
+  }
+  .div_contacts {
+    width: 265px;
+    height: 310px;
+    padding: 23px 0 0 32px;
+  }
+  .div_contacts_title {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 8px 0;
+  }
+  .div_contacts_subtext {
+    font-size: 12px;
+    line-height: 20px;
+    width: 246px;
+  }
+  /*контакты конец*/
+  /*подвал начало*/
+  .container_footer {
+    max-width: 360px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .div_footer {
+    display: block;
+    padding: 45px 0 56px 0;
+  }
+  .footer_left {
+    margin-bottom: 40px;
+  }
+  .socials {
+    margin: 40px 0 0 0;
+  }
+  .footer_left h4 {
+    font-size: 20px;
+  }
+  .footer_left p {
+    font-size: 12px;
+    width: auto;
+  }
+  /*подвал конец*/
+  /** Главная конец **/
+  /** Студентам начало **/
+  /*Расписание занятий/сессии начало*/
+  .classroom_overlay {
+    display: none;
+  }
+  .Schedule_of_classes {
+    margin: 37px 0 0 0;
+  }
+  .container_students {
+    max-width: 334px;
+  }
+  .SOC_title {
+    font-size: 20px;
+    margin: 0 0 19px 11px;
+  }
+  .SOC_cards {
+    display: block;
+  }
+  .SOC_cards_left {
+    padding: 17px 0 0 26px;
+    width: 292px;
+    height: 180px;
+    margin: 0 0 30px 0;
+  }
+  .SOC_cards_left_item {
+    font-size: 12px;
+    margin: 0 0 0 0;
+  }
+  .SOC_cards_right {
+    padding: 17px 0 0 26px;
+    width: 292px;
+    height: 180px;
+  }
+  .SOC_cards_right_item {
+    font-size: 12px;
+    margin: 0 0 0 0;
+  }
+  .SOC_cards_right_item:nth-child(4) {
+    width: 250px;
+  }
+  .SOC_buttons_div_item {
+    width: 308px;
+    height: 45px;
+    border-radius: 4px;
+    background: #EBEBEB;
+  }
+  .SOC_buttons_div_item {
+    padding: 13px 0 0 10px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0 31px 25px 0;
+  }
+  .SOC_buttons {
+    display: block;
+  }
+  .SOCB_top {
+    margin: 51px 0 0 0;
+  }
+  .SOCBDI_escpeccialy {
+    padding: 15px 0 0 10px;
+  }
+  /*Расписание занятий/сессии конец*/
+  /*СТУДЕНТЫ ответы на вопрсоы начало*/
+  .div_answers_to_questions_students {
+    margin: 0 0 0 0;
+  }
+  /*СТУДЕНТЫ ответы на вопрсоы конец*/
+  /*мероприятия и новости начало*/
+  .events_and_news {
+    margin: 40px 0 63px 0;
+  }
+  .progress-bar {
+    width: 330px;
+    height: 3px;
+  }
+  .progress {
+    width: 30%;
+  }
+  .events_and_news_text {
+    display: flex;
+    width: 323px;
+    justify-content: space-between;
+    margin: 0 0 5px 0;
+  }
+  .events_and_news_text p:nth-child(1) {
+    color: #5C45EA;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .events_and_news_text p:nth-child(2) {
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .div_events_block {
+    display: block;
+    width: auto;
+  }
+  .events_block {
+    width: 323px;
+    margin: 0 0 42px 0;
+  }
+  /*мероприятия и новости конец*/
+  /** Студентам конец **/
+  /** Профиль начало **/
+  .profile {
+    margin: 46px 0 74px 0;
+  }
+  .profile_body {
+    display: block;
+  }
+  .profile_body_left {
+    width: 330px;
+    height: auto;
+    border-radius: 4px;
+    background: #EBEBEB;
+    padding: 31px 0 23px 32px;
+    margin: 0 0 0 0;
+  }
+  .profile_body_left_text {
+    width: 300px;
+  }
+  textarea {
+    width: 360px;
+  }
+  /** Профиль конец **/
+  /** Авторизация начало **/
+  .block_auth {
+    margin: 100px 0 0 0;
+  }
+  /** Авторизация конец **/
+}
+/******************/
+/*                */
+/*  перевёрнутый  */
+/*     телефон    */
+/*                */
+/*                */
+/******************/
+@media (width: 800px) {
+  .container {
+    max-width: 592px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  /** Главная начало **/
+  /*шапка начало*/
+  .container_header {
+    max-width: 696px;
+  }
+  .main-menu li:nth-child(2) {
+    margin-right: 0;
+    display: none;
+  }
+  .main-menu li:nth-child(3) {
+    margin-right: 0;
+    display: none;
+  }
+  .main-menu li:nth-child(4) {
+    margin-right: 0;
+    display: none;
+  }
+  .logo52px {
+    display: none;
+  }
+  .logo48px {
+    display: flex;
+    align-items: center;
+    margin-right: 478px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .logo48px img {
+    margin-right: 19px;
+  }
+  .ham-menu {
+    display: block;
+  }
+  .off-screen-menu {
+    background-color: rgb(255, 255, 255);
+    height: 92px;
+    max-width: 800px;
+    top: 76px;
+    right: -800px;
+  }
+  .hr_osm {
+    width: 528px;
+    top: 80px;
+  }
+  .div_ham_menu a {
+    font-size: 16px;
+  }
+  .div_ham_menu a:nth-child(1) {
+    margin-right: 50px;
+  }
+  .div_ham_menu a:nth-child(2) {
+    margin-right: 50px;
+  }
+  /*шапка конец*/
+  .hero_title {
+    font-size: 20px;
+    margin: 56px 0 33px 67px;
+  }
+  /*hero блок начало*/
+  .sidebar {
+    width: 61px;
+    height: 178px;
+    left: 12%;
+  }
+  .sidebar ul {
+    margin: 18px 0 0 19px;
+  }
+  .sidebar ul li {
+    width: auto;
+  }
+  .sidebar_element_1440px {
+    display: none;
+  }
+  .sidebar_icon {
+    display: block;
+  }
+  .hero_img {
+    width: 420px;
+    height: 235.97px;
+    margin: 0 0 0 67px;
+  }
+  /*hero блок конец*/
+  /*расписание начало*/
+  .timetable {
+    margin: 65px 0 85px 147px;
+  }
+  .div_timetable h2 {
+    font-size: 20px;
+    margin: 0 0 43px 0;
+  }
+  .div_timetable_text {
+    font-size: 14px;
+    line-height: 20px;
+    width: 491px;
+    margin: 0 0 71px 0;
+  }
+  .timetable_table {
+    width: 525px;
+    height: 701px;
+  }
+  .event_column_regular {
+    line-height: 20px;
+    font-size: 14px;
+    margin: 0 30px 0 0;
+  }
+  .event_column_bold {
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .timetable_table_hr {
+    border: 1.5px solid #000000;
+    width: 461px;
+    border-radius: 20px;
+  }
+  .event {
+    display: block;
+  }
+  .event:nth-child(1) {
+    margin: 0 0 29px 0;
+  }
+  .timetable_table_hr {
+    margin: 29px 0 29px 0;
+  }
+  .event_column {
+    margin: 25px 0 25px 0;
+    display: flex;
+  }
+  .events {
+    padding: 5px 0 0 23px;
+  }
+  .ecr_width {
+    width: 300px;
+  }
+  .ecr_width_width {
+    width: auto;
+  }
+  .display_none {
+    display: none;
+  }
+  .dots {
+    display: block;
+  }
+  /*расписание конец*/
+  /*ответы на вопросы начало*/
+  .ATQ_block {
+    width: 417px;
+  }
+  .div_answers_to_questions {
+    margin: 0 0 0 80px;
+  }
+  /*ответы на вопросы конец*/
+  /*контакты начало*/
+  .contacts {
+    margin: 64px 0 105px 155px;
+  }
+  .div_contacts {
+    width: 502px;
+    height: 230px;
+    padding: 23px 0 0 32px;
+  }
+  .div_contacts_title {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 8px 0;
+  }
+  .div_contacts_subtext {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  /*контакты конец*/
+  /*подвал начало*/
+  .container_footer {
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .div_footer {
+    display: block;
+    padding: 45px 0 56px 0;
+  }
+  .footer_left {
+    margin-bottom: 40px;
+  }
+  .socials {
+    margin: 40px 0 0 0;
+  }
+  /*подвал конец*/
+  /** Главная конец **/
+  /** Студентам начало **/
+  /*Расписание занятий/сессии начало*/
+  .classroom_overlay {
+    height: 201.67px;
+  }
+  .container_students {
+    max-width: 422px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .classroom_overlay {
+    height: 193.3px;
+  }
+  .SOC_cards {
+    display: block;
+  }
+  .SOC_cards_left {
+    margin: 0 0 43px 0;
+  }
+  .SOC_buttons {
+    display: block;
+  }
+  .SOCB_top {
+    margin: 135px 0 0 0;
+  }
+  /*Расписание занятий/сессии конец*/
+  /*СТУДЕНТЫ ответы на вопрсоы начало*/
+  .div_answers_to_questions_students {
+    margin: 0 0 0 0;
+  }
+  /*СТУДЕНТЫ ответы на вопрсоы конец*/
+  /*мероприятия и новости начало*/
+  .events_and_news {
+    margin: 40px 0 63px 0;
+  }
+  .progress-bar {
+    width: 521px;
+    height: 3px;
+  }
+  .progress {
+    width: 30%;
+  }
+  .events_and_news_text {
+    display: flex;
+    width: 323px;
+    justify-content: space-between;
+    margin: 0 0 5px 0;
+  }
+  .events_and_news_text p:nth-child(1) {
+    color: #5C45EA;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .events_and_news_text p:nth-child(2) {
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .div_events_block {
+    display: block;
+    width: auto;
+  }
+  .events_block {
+    width: 323px;
+    margin: 0 0 42px 0;
+  }
+  /*мероприятия и новости конец*/
+  /** Студентам конец **/
+  /** Профиль начало **/
+  .profile_body {
+    display: block;
+  }
+  .profile_body_right {
+    margin: 0 0 106px 0;
+  }
+  /** Профиль конец **/
+  .block_auth {
+    margin: 100px 0 0 150px;
+  }
+}
+.hidden {
+  display: none;
+}/*# sourceMappingURL=main.css.map */
